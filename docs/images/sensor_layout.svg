@@ -1,0 +1,98 @@
+<svg viewBox="0 0 1100 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+  <defs>
+    <linearGradient id="bgp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f9fc"/><stop offset="1" stop-color="#e9eef5"/></linearGradient>
+    <linearGradient id="cyl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef2f7"/><stop offset="0.35" stop-color="#b4c0ce"/><stop offset="1" stop-color="#6b7b8f"/></linearGradient>
+    <linearGradient id="belt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#17191d"/></linearGradient>
+    <linearGradient id="hous" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8b2635"/><stop offset="1" stop-color="#d1495b"/></linearGradient>
+    <linearGradient id="coal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a4f57"/><stop offset="1" stop-color="#1b1d21"/></linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#0b2545" flood-opacity="0.18"/></filter>
+    <marker id="dot" markerWidth="8" markerHeight="8" refX="4" refY="4"><circle cx="4" cy="4" r="3" fill="#52606d"/></marker>
+  </defs>
+  <rect width="1100" height="600" rx="14" fill="url(#bgp)" stroke="#d3dae3"/>
+  <text x="40" y="52" font-size="24" font-weight="700" fill="#0b2545">Conveyor Idler Condition Monitoring</text>
+  <text x="40" y="78" font-size="14" fill="#52606d">Where each group of dataset columns originates on the machine</text>
+
+  <!-- coal pile -->
+  <path d="M95 232 C110 190 135 205 150 180 C170 150 195 178 215 160 C240 135 262 170 285 150 C310 128 332 165 355 148 C380 132 400 168 425 150 C450 138 470 170 495 160 C515 152 535 178 560 190 L585 232 Z" fill="url(#coal)" stroke="#0e0f11"/>
+  <g fill="#6a707a" opacity="0.55"><circle cx="190" cy="196" r="3"/><circle cx="262" cy="188" r="3"/><circle cx="340" cy="190" r="3"/><circle cx="420" cy="192" r="3"/><circle cx="500" cy="198" r="3"/></g>
+  <!-- belt -->
+  <rect x="70" y="228" width="540" height="16" rx="3" fill="url(#belt)"/>
+  <!-- roller -->
+  <g filter="url(#sh)">
+    <rect x="150" y="246" width="400" height="86" rx="10" fill="url(#cyl)" stroke="#55657a"/>
+    <rect x="124" y="276" width="30" height="26" fill="#7d8da1" stroke="#55657a"/>
+    <rect x="546" y="276" width="30" height="26" fill="#7d8da1" stroke="#55657a"/>
+    <rect x="96" y="260" width="30" height="58" rx="6" fill="url(#hous)" stroke="#6b1f2b"/>
+    <rect x="574" y="260" width="30" height="58" rx="6" fill="url(#hous)" stroke="#6b1f2b"/>
+  </g>
+  <text x="350" y="294" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2d3d">Idler roller</text>
+  <text x="111" y="342" text-anchor="middle" font-size="12" font-weight="600" fill="#8b2635">Bearing</text>
+  <text x="589" y="342" text-anchor="middle" font-size="12" font-weight="600" fill="#8b2635">Bearing</text>
+  <!-- frame -->
+  <rect x="70" y="332" width="540" height="12" rx="3" fill="#52606d"/>
+  <rect x="92" y="344" width="16" height="110" fill="#52606d"/><rect x="592" y="344" width="16" height="110" fill="#52606d"/>
+  <rect x="50" y="454" width="600" height="12" rx="3" fill="#8392a5"/>
+
+  <!-- sensor modules -->
+  <g filter="url(#sh)">
+    <rect x="99" y="266" width="24" height="16" rx="4" fill="#0969da" stroke="#ffffff"/>
+    <rect x="577" y="266" width="24" height="16" rx="4" fill="#0969da" stroke="#ffffff"/>
+    <rect x="577" y="296" width="24" height="14" rx="4" fill="#bf8700" stroke="#ffffff"/>
+    <rect x="338" y="120" width="24" height="16" rx="4" fill="#8250df" stroke="#ffffff"/>
+    <rect x="338" y="392" width="24" height="16" rx="4" fill="#1a7f37" stroke="#ffffff"/>
+    <rect x="98" y="396" width="18" height="24" rx="3" fill="#ffffff" stroke="#52606d"/>
+  </g>
+  <g stroke="#52606d" stroke-width="1.5"><line x1="350" y1="136" x2="350" y2="150"/><line x1="350" y1="344" x2="350" y2="392"/></g>
+  <g fill="none" stroke="#0969da" stroke-width="2" stroke-linecap="round" opacity="0.85">
+    <path d="M84 266 q-8 8 0 16"/><path d="M76 261 q-13 13 0 26"/>
+    <path d="M616 266 q8 8 0 16"/><path d="M624 261 q13 13 0 26"/>
+  </g>
+  <g stroke="#52606d" stroke-width="1" opacity="0.8"><line x1="102" y1="402" x2="112" y2="402"/><line x1="102" y1="407" x2="112" y2="407"/><line x1="102" y1="412" x2="108" y2="412"/></g>
+  <!-- numbered badges on machine -->
+  <g font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">
+        <circle cx="150" cy="268" r="11" fill="#0969da"/><text x="150" y="272">1</text>
+    <circle cx="612" cy="318" r="11" fill="#bf8700"/><text x="612" y="322">4</text>
+    <circle cx="380" cy="128" r="11" fill="#8250df"/><text x="380" y="132">2</text>
+    <circle cx="380" cy="400" r="11" fill="#1a7f37"/><text x="380" y="404">3</text>
+    <circle cx="138" cy="408" r="11" fill="#52606d"/><text x="138" y="412">5</text>
+  </g>
+  <text x="380" y="104" text-anchor="middle" font-size="12" fill="#52606d">Acoustic / dust sensor</text>
+  <text x="380" y="438" text-anchor="middle" font-size="12" fill="#52606d">Motor / load meter</text>
+  <text x="165" y="440" font-size="12" fill="#52606d">CMMS tag</text>
+
+  <!-- cards -->
+  <g font-size="13" fill="#1f2d3d">
+    <g filter="url(#sh)">
+      <rect x="725" y="92" width="355" height="104" rx="10" fill="#ffffff" stroke="#0969da"/>
+      <rect x="725" y="92" width="8" height="104" rx="4" fill="#0969da"/>
+    </g>
+    <text x="772" y="116" font-weight="700" fill="#0969da" font-size="14">Accelerometer · vibration</text><circle cx="753" cy="111" r="9" fill="#0969da"/><text x="753" y="115" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="747" y="138">vibration_rms · vibration_peak</text>
+    <text x="747" y="156">vibration_kurtosis · crest_factor</text>
+    <text x="747" y="174">bpfo / bpfi / bsf / ftf _amplitude</text>
+
+    <g filter="url(#sh)"><rect x="725" y="210" width="355" height="76" rx="10" fill="#ffffff" stroke="#8250df"/><rect x="725" y="210" width="8" height="76" rx="4" fill="#8250df"/></g>
+    <text x="772" y="234" font-weight="700" fill="#8250df" font-size="14">Acoustic &amp; environment</text><circle cx="753" cy="229" r="9" fill="#8250df"/><text x="753" y="233" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="747" y="254">acoustic_level · dust_concentration</text>
+    <text x="747" y="272">moisture_level · humidity · ambient_temp</text>
+
+    <g filter="url(#sh)"><rect x="725" y="300" width="355" height="76" rx="10" fill="#ffffff" stroke="#1a7f37"/><rect x="725" y="300" width="8" height="76" rx="4" fill="#1a7f37"/></g>
+    <text x="772" y="324" font-weight="700" fill="#1a7f37" font-size="14">Drive &amp; load monitoring</text><circle cx="753" cy="319" r="9" fill="#1a7f37"/><text x="753" y="323" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+    <text x="747" y="344">rotational_speed · belt_speed · motor_current</text>
+    <text x="747" y="362">conveyor_load · operating_hours</text>
+
+    <g filter="url(#sh)"><rect x="725" y="390" width="355" height="76" rx="10" fill="#ffffff" stroke="#bf8700"/><rect x="725" y="390" width="8" height="76" rx="4" fill="#bf8700"/></g>
+    <text x="772" y="414" font-weight="700" fill="#bf8700" font-size="14">Thermal sensor</text><circle cx="753" cy="409" r="9" fill="#bf8700"/><text x="753" y="413" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+    <text x="747" y="434">bearing_temperature</text>
+    <text x="747" y="452">(compare with ambient_temperature)</text>
+
+    <g filter="url(#sh)"><rect x="725" y="480" width="355" height="90" rx="10" fill="#ffffff" stroke="#52606d"/><rect x="725" y="480" width="8" height="90" rx="4" fill="#52606d"/></g>
+    <text x="772" y="504" font-weight="700" fill="#52606d" font-size="14">Maintenance records (CMMS)</text><circle cx="753" cy="499" r="9" fill="#52606d"/><text x="753" y="503" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+    <text x="747" y="524">lubrication_age_hours · seal_condition_score</text>
+    <text x="747" y="542">last_maintenance_hours · bearing_age_months</text>
+    <text x="747" y="560">previous_failure_count</text>
+  </g>
+  <rect x="40" y="500" width="640" height="70" rx="10" fill="#0b2545"/>
+  <text x="62" y="530" font-size="14" font-weight="700" fill="#13a89e">PREDICTION TARGET</text>
+  <text x="62" y="554" font-size="16" fill="#ffffff">failure_within_7_days  →  0 = healthy · 1 = failure expected within a week</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYToxMTM4MTJhNC0wMDQ4LTQ0YmEtYjhmNS03OGU4Y2ViMTcxN2YAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaM5aB08u7vbOCTsb1vTTkycAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo5MThiYWE5NC1mYmI0LTQ0MjAtYWM1Yy0zZTg0N2EyZDMyODBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoa5CCE8RNcTt0YeoO9COM0AAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggwGZMpbrvq6QECYf5FFeJyJ+N360fO0cTINkRyO/1ChKkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaGXCtYkohivACW0W8lJNXpQAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIKnyS5puNHaKSarAbzs6uXeqTP0gvDGK3hHMyjVRSHWWZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSHRZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjExMzgxMmE0LTAwNDgtNDRiYS1iOGY1LTc4ZThjZWIxNzE3Zi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjRiMDZiOTllLWVkMDctNGU0Yi05ZjYzLTY4ZTM5ZDdhNmY0M3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDAZkyluu+rpAQJh/kUV4nIn43frR87RxMg2RHI7/UKEqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg20BGnLfTeJ5mBL9b6ixSjpKb/Kb66z8zW/rKC8qS8AqiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggf6Mh2HSHMupK3bOUeyz+/BMw/q3E9K4rtG+wio9bg2l0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQAvOCarrgnBTKz2YVuTq5/lqHOWPU/yOwlDLFiCwNzjtJb4XFuvczUY+B/EL+U6BsvckcBuFLI3vGmGThEb+5Jc=</c2pa:manifest></metadata></svg>
